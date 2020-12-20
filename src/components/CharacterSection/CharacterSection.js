@@ -31,7 +31,7 @@ export default function CharacterSection({
           <p className="character__info-text">{location.name}</p>
         </div>
       </div>
-      <Link className="character__button" to="/">
+      <Link className="character__button" to="/rick-and-morty-library">
         Back
       </Link>
     </section>

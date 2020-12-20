@@ -8,7 +8,8 @@
 
 **В проекте использованы следующие технологии:**
 - Functional components;
-- Hooks (useState, useEffect, useRef);
+- Hooks (useState, useEffect, useRef, useRouteMatch);
+- Router;
 - Axios (для HTTP-запросов);
 - Intersection Observer (для имитации бесконечного скролла); 
 
