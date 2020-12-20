@@ -8,7 +8,7 @@ export default function Card({ name, id, image }) {
     <Link className="card" to={`character/${id}`}>
       <div className="card__content-container">
         <h2 className="card__title">{name}</h2>
-        <img className="card__image" src={image} alt={`${name}`} />
+        <img className="card__image" src={image} alt={name} />
       </div>
     </Link>
   );

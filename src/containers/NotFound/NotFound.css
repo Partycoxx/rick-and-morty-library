@@ -1,0 +1,45 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 94px - 130px);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.not-found__number {
+  font-family: "Roboto";
+  font-size: 90px;
+  color: red;
+  margin: 0 0 40px 0;
+}
+
+.not-found__text {
+  font-family: "Roboto";
+  color: #1f1f1f;
+  font-size: 32px;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.not-found__image {
+  max-height: 56%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0 0 40px;
+}
+
+@media screen and (max-width: 440px) {
+  .not-found {
+    padding: 20px;
+  }
+
+  .not-found__number {
+    margin: 0 0 20px 0;
+  }
+
+  .not-found__text {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+}

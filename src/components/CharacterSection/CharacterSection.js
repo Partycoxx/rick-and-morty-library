@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "./CharacterSection.css";
 
 export default function CharacterSection({
@@ -12,7 +11,7 @@ export default function CharacterSection({
 }) {
   return (
     <section className="character">
-      <h1 className="character__title">Character: {name}</h1>
+      <h1 className="character__title">{name}</h1>
       <div className="character__container">
         <img className="character__image" src={image} alt={name} />
         <div className="character__info-container">
@@ -32,7 +31,9 @@ export default function CharacterSection({
           <p className="character__info-text">{location.name}</p>
         </div>
       </div>
-      <Link className="character__button" to="/">Back</Link>
+      <Link className="character__button" to="/">
+        Back
+      </Link>
     </section>
   );
 }

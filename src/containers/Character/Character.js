@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import { getCharacterInfo } from "../../utils/API/axios";
 import CharacterSection from "../../components/CharacterSection/CharacterSection";
-
 import "./Character.css";
 
 export default function Character() {
@@ -10,26 +9,18 @@ export default function Character() {
   const userId = id;
   const [characterData, setCharacterData] = useState({});
 
+  /* Получаем данные о персонаже */
+
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/${userId}`, {
-      method: "GET",
-    })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          return Promise.reject(res);
-        }
-      })
+    getCharacterInfo(userId)
       .then((res) => {
         setCharacterData(res);
-      });
+      })
+      .catch((err) => console.log(err));
   }, [userId]);
 
-  console.log(characterData);
-
   return (
-    Object.keys(characterData).length > 0 &&
+    Object.keys(characterData).length > 0 && (
       <CharacterSection
         image={characterData.image}
         name={characterData.name}
@@ -37,5 +28,6 @@ export default function Character() {
         location={characterData.location}
         gender={characterData.gender}
       />
+    )
   );
 }
