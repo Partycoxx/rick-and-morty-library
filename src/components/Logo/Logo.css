@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  max-width: 520px;
+}
+
+.logo__image {
+  max-width: 150px;
+  height: 100%;
+}
+
+.logo__text {
+  font-family: "Raleway";
+  color: #a6da95;
+  font-size: 35px;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 440px) {
+  .logo {
+    justify-content: center;
+  }
+  .logo__text {
+    display: none;
+    visibility: hidden;
+  }
+}

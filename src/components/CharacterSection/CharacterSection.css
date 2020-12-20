@@ -1,0 +1,120 @@
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  height: calc(100vh - 94px - 130px);
+  box-sizing: border-box;
+}
+
+.character__title {
+  font-family: "Roboto";
+  font-size: 32px;
+  color: #1f1f1f;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.character__container {
+  display: flex;
+  margin: 0 auto 40px;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+}
+
+.character__image {
+  border-radius: 8px 0 0 8px;
+  max-width: 300px;
+}
+
+.character__info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 20px;
+  padding: 0;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.character__info-title {
+  margin: 0 0 8px 0;
+  font-family: "Roboto";
+  font-size: 24px;
+  color: #93e677;
+}
+
+.character__info-text {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #a6da95;
+}
+
+.character__info-text:last-child {
+  margin: 0;
+}
+
+.character__status-container {
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
+
+.character__status {
+  display: inline-block;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px 0 0;
+}
+
+.character__status_type_alive {
+  background-color: #26532b;
+}
+
+.character__status_type_dead {
+  background-color: #ff674d;
+}
+
+.character__status_type_unknown {
+  background-color: #1a5e63;
+}
+
+.character__button {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #1f1f1f;
+  text-decoration: none;
+  border: 1px solid #1f1f1f;
+  padding: 8px 32px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 690px) {
+  .character__container {
+    flex-direction: column;
+  }
+  .character__image {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .character {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+  .character__title {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .character__image {
+    max-width: 260px;
+  }
+}

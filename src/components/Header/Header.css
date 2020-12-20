@@ -1,0 +1,9 @@
+.header {
+  height: 94px;
+  background-color: #1f1f1f;
+  color: #a6da95;
+  box-sizing: border-box;
+  padding: 12px;
+  position: fixed;
+  width: 100%;
+}

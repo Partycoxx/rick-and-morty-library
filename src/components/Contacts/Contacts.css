@@ -1,0 +1,30 @@
+.contacts {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contacts__text {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #eae9f5;
+  margin: 0 0 12px 0;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__list-item {
+    margin: 0 0 8px 0;
+}
+
+.contacts__list-item:last-child {
+    margin: 0;
+}
+
+
