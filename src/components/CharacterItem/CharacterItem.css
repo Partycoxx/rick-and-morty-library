@@ -96,6 +96,9 @@
 }
 
 @media screen and (max-width: 690px) {
+  .character {
+    height: 100%;
+  }
   .character__container {
     flex-direction: column;
   }
@@ -116,10 +119,16 @@
 }
 
 @media screen and (max-width: 360px) {
-  .character {
-    height: 100%;
+  .character__info-container {
+    white-space: normal;
   }
-  .character__image {
+  .character__container {
     max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .character__container {
+    max-width: 240px;
   }
 }
