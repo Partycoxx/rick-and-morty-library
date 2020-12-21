@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-library/static/css/main.eda3ae55.chunk.css",
+    "main.css": "/rick-and-morty-library/static/css/main.b5b05792.chunk.css",
     "main.js": "/rick-and-morty-library/static/js/main.ad582304.chunk.js",
     "main.js.map": "/rick-and-morty-library/static/js/main.ad582304.chunk.js.map",
     "runtime-main.js": "/rick-and-morty-library/static/js/runtime-main.a705050f.js",
@@ -8,7 +8,7 @@
     "static/js/2.f7f7c035.chunk.js": "/rick-and-morty-library/static/js/2.f7f7c035.chunk.js",
     "static/js/2.f7f7c035.chunk.js.map": "/rick-and-morty-library/static/js/2.f7f7c035.chunk.js.map",
     "index.html": "/rick-and-morty-library/index.html",
-    "static/css/main.eda3ae55.chunk.css.map": "/rick-and-morty-library/static/css/main.eda3ae55.chunk.css.map",
+    "static/css/main.b5b05792.chunk.css.map": "/rick-and-morty-library/static/css/main.b5b05792.chunk.css.map",
     "static/js/2.f7f7c035.chunk.js.LICENSE.txt": "/rick-and-morty-library/static/js/2.f7f7c035.chunk.js.LICENSE.txt",
     "static/media/index.css": "/rick-and-morty-library/static/media/Roboto-Regular.31012f9b.woff",
     "static/media/error_image.2657a9aa.png": "/rick-and-morty-library/static/media/error_image.2657a9aa.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.a705050f.js",
     "static/js/2.f7f7c035.chunk.js",
-    "static/css/main.eda3ae55.chunk.css",
+    "static/css/main.b5b05792.chunk.css",
     "static/js/main.ad582304.chunk.js"
   ]
 }
