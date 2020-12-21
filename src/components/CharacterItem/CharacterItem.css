@@ -96,9 +96,6 @@
 }
 
 @media screen and (max-width: 690px) {
-  .character {
-    height: 100%;
-  }
   .character__container {
     flex-direction: column;
   }
@@ -119,6 +116,9 @@
 }
 
 @media screen and (max-width: 360px) {
+  .character {
+    height: 100%;
+  }
   .character__image {
     max-width: 260px;
   }
