@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 
-export default function Contact({ text, link, image }) {
+export function Contact({ text, link, image }) {
   const Image = image;
   return (
     <a className="contact" href={link}>

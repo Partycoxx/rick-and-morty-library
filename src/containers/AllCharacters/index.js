@@ -1,0 +1,1 @@
+export { AllCharacters } from "./AllCharacters";

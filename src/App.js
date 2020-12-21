@@ -1,22 +1,22 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Characters from "./containers/Characters/Characters";
-import Character from "./containers/Character/Character";
-import NotFound from "./containers/NotFound/NotFound";
-import Layout from "./containers/Layout/Layout";
+import { MainLayout } from "./containers/MainLayout";
+import { AllCharacters } from "./containers/AllCharacters";
+import { SingleCharacter } from "./containers/SingleCharacter";
+import { NotFound } from "./components/NotFound";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Layout>
+      <MainLayout>
         <Switch>
-          <Route path="/rick-and-morty-library/character/:id" component={Character} />
-          <Route exact path="/rick-and-morty-library/" component={Characters} />
+          <Route path="/rick-and-morty-library/character/:id" component={SingleCharacter} />
+          <Route exact path="/rick-and-morty-library/" component={AllCharacters} />
           <Route component={NotFound} />
         </Switch>
-      </Layout>
+      </MainLayout>
     </div>
   );
 }

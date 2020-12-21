@@ -1,8 +1,8 @@
 import React from "react";
-import Contacts from "../Contacts/Contacts";
+import { Contacts } from "../Contacts";
 import "./Footer.css";
 
-export default function Footer() {
+export function Footer() {
   return (
     <div className="footer">
       <Contacts />

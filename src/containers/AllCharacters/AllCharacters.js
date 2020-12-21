@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
-import { getCardsByPage } from "../../utils/API/axios";
-import CharactersList from "../../components/CharactersList/CharactersList";
-import "./Characters.css";
+import { getCardsByPage } from "../../api/axios";
+import { CharactersList } from "../../components/CharactersList";
+import "./AllCharacters.css";
 
-export default function Characters() {
+export function AllCharacters() {
   const [cardsList, setCardslist] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const loader = useRef();

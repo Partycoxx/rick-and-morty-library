@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getCharacterInfo } from "../../utils/API/axios";
-import CharacterSection from "../../components/CharacterSection/CharacterSection";
-import "./Character.css";
+import { getCharacterInfo } from "../../api/axios";
+import { CharacterItem } from "../../components/CharacterItem";
+import "./SingleCharacter.css";
 
-export default function Character() {
+export function SingleCharacter() {
   const { id } = useParams();
   const userId = id;
   const [characterData, setCharacterData] = useState({});
@@ -21,7 +21,7 @@ export default function Character() {
 
   return (
     Object.keys(characterData).length > 0 && (
-      <CharacterSection
+      <CharacterItem
         image={characterData.image}
         name={characterData.name}
         status={characterData.status}

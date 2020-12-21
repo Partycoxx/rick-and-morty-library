@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "../Card/Card";
+import { Card } from "../Card";
 import "./CharactersList.css";
 
-export default function CharactersList({ cardsList, loader }) {
+export function CharactersList({ cardsList, loader }) {
   const cards = cardsList.map(({ id, name, image }, i) => (
     <li key={i} className="characters-list__list-item">
       <Card id={id} name={name} image={image} />

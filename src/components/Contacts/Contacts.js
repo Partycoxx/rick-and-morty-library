@@ -1,9 +1,9 @@
 import React from "react";
-import Contact from "../Contact/Contact";
+import { Contact } from "../Contact";
 import config from "./config";
 import "./Contacts.css";
 
-export default function Contacts() {
+export function Contacts() {
   const contactItems = config.map(({ text, image, link }, i) => (
     <li key={i} className="contacts__list-item">
       <Contact text={text} image={image} link={link} />

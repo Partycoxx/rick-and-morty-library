@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../Logo/Logo";
+import { Logo } from "../Logo";
 import "./Header.css";
 
-export default function Header() {
+export function Header() {
   return (
     <div className="header">
       <Logo />

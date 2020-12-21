@@ -1,8 +1,8 @@
 import React from "react";
-import "./Logo.css";
 import { ReactComponent as LogoImage } from "../../assets/images/logo.svg";
+import "./Logo.css";
 
-export default function Logo() {
+export function Logo() {
   return (
     <div className="logo">
       <LogoImage className="logo__image" />

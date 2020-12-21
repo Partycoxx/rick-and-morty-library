@@ -1,14 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./CharacterSection.css";
+import "./CharacterItem.css";
 
-export default function CharacterSection({
-  image,
-  name,
-  status,
-  gender,
-  location,
-}) {
+export function CharacterItem({ image, name, status, gender, location }) {
   return (
     <section className="character">
       <h1 className="character__title">{name}</h1>
@@ -18,10 +12,7 @@ export default function CharacterSection({
           <h2 className="character__info-title">Status</h2>
           <div className="character__status-container">
             <span
-              className={
-                "character__status " +
-                `character__status_type_${status.toLowerCase()}`
-              }
+              className={`character__status character__status_type_${status.toLowerCase()}`}
             ></span>
             <p className="character__info-text">{status}</p>
           </div>
